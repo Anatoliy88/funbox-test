@@ -10,6 +10,33 @@ append vars
 	- image = ''
 
 block content
-	.site-wrapper
-		.container
-			
+	.container
+		h1.main-title
+			| Ты сегодня покормил кота?
+		.catalog
+			.catalog__item.item
+				.item__wrapper
+					header.item__header
+						.item__description
+							| Сказочное заморское яство
+						.item__title
+							span.item__name
+								| Нямушка
+							span.item__taste
+								| с фуа-гра
+						.item__params
+							span
+								| 10 порций
+							span
+								| мышь в подарок
+					.item__image.item__image--cat
+					.item__packaging
+						span.item__number
+							| 0.5
+						span
+							| кг
+				footer.item__footer
+					p
+						| Чего сидишь? Порадуй котэ,
+						a(href="#")
+							| купи.
