@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  will-change: opacity;
+
+  .is-page-loaded & {
+    opacity: 1;
+  }
+}

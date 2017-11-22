@@ -1,0 +1,44 @@
+include mixins/svg
+
+block vars
+	- var htmlClass = ""
+	- var htmlAttrs = {}
+	- var lang = ""
+	- var locale = ""
+	- var viewport = ""
+	- var url = ""
+	- var title = ""
+	- var description = ""
+	- var twitterTitle = ""
+	- var twitterDescription = ""
+	- var image = ""
+
+doctype html
+html(class=htmlClass lang=lang || "ru")&attributes(htmlAttrs)
+	head
+		block meta
+			meta(charset="utf-8")
+			meta(http-equiv="X-UA-Compatible" content="IE=edge")
+			meta(name="viewport" content=viewport || "width=device-width")
+			meta(name="description" content=description || "")
+			meta(name="og:type" content="website")
+			meta(name="og:url" content=url || "")
+			meta(name="og:title" content=title || "")
+			meta(name="og:description" content=description || "")
+			meta(name="og:image" content=image || "")
+			meta(name="og:locale" content=locale || "ru_RU")
+			meta(name="twitter:card" content="summary_large_image")
+			meta(name="twitter:title" content=twitterTitle || title || "")
+			meta(name="twitter:description" content=twitterDescription || description || "")
+		block title
+			title= title
+		block links
+			link(rel="image_src" href=image || "")
+			link(rel="shortcut icon" href="favicon.ico?v=" + Date.now())
+			link(rel="stylesheet" href="css/main.css?v=" + Date.now())
+	body
+		.site-wrapper
+			block content
+		block scripts
+			script(src="js/vendor.js?v=" + Date.now())
+			script(src="js/main.js?v=" + Date.now())

@@ -1,0 +1,17 @@
+.site-wrapper {
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-height: 100%;
+}
+
+// container
+
+.container {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}

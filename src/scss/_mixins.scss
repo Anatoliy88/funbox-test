@@ -1,0 +1,11 @@
+@import "mixins/sprites";
+
+@mixin col($col, $sum, $gap: 15px, $align: top, $first: false, $last: false) {
+  display: inline-block;
+  vertical-align: $align;
+  padding-right: if($last, 0, $gap);
+  padding-left: if($first, 0, $gap);
+  width: percentage($col / $sum);
+  box-sizing: border-box;
+  font-size: 16px;
+}
