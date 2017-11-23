@@ -10,4 +10,114 @@ append vars
 	- image = ''
 
 block content
-	
+	.container
+		h1.main-title
+			| Ты сегодня покормил кота?
+		.catalog
+			.catalog__item.item
+				.item__wrapper
+					header.item__header
+						.item__description.item__description--hover
+							| Котэ не одобряет?
+						.item__description
+							| Сказочное заморское яство
+						.item__title
+							span.item__name
+								| Нямушка
+							span.item__taste
+								| с фуа-гра
+						.item__params
+							span
+								b
+									| 10 
+								| порций
+							span
+								| мышь в подарок
+					.item__image.item__image--cat
+					.item__packaging
+						.item__number
+							span
+								| 0,5
+							span
+								| кг
+				footer.item__footer
+					p.item__footer-link
+						| Чего сидишь? Порадуй котэ, 
+						a(href="#")
+							| купи.
+					p.item__footer-descr
+						| Печень утки разварная с артишоками.
+					p.item__footer-disabled
+			.catalog__item.item
+				.item__wrapper
+					header.item__header
+						.item__description.item__description--hover
+							| Котэ не одобряет?
+						.item__description
+							| Сказочное заморское яство
+						.item__title
+							span.item__name
+								| Нямушка
+							span.item__taste
+								| с рыбой
+						.item__params
+							span
+								b 
+									| 40 
+								| порций
+							span
+								b 
+									| 2 
+								| мыши в подарок
+					.item__image.item__image--cat
+					.item__packaging
+						.item__number
+							span
+								| 2
+							span
+								| кг
+				footer.item__footer
+					p.item__footer-link
+						| Чего сидишь? Порадуй котэ, 
+						a(href="#")
+							| купи.
+					p.item__footer-descr
+						| Головы щучьи с чесноком да свежайшая сёмгушка.
+					p.item__footer-disabled
+			.catalog__item.item.disabled
+				.item__wrapper
+					header.item__header
+						.item__description.item__description--hover
+							| Котэ не одобряет?
+						.item__description
+							| Сказочное заморское яство
+						.item__title
+							span.item__name
+								| Нямушка
+							span.item__taste
+								| с курой
+						.item__params
+							span
+								b
+									| 100 
+								| порций
+							span
+								b
+									| 5 
+								| мышей в подарок
+								| заказчик доволен
+					.item__image.item__image--cat
+					.item__packaging
+						.item__number
+							span
+								| 5
+							span
+								| кг
+				footer.item__footer
+					p.item__footer-link
+						| Чего сидишь? Порадуй котэ, 
+						a(href="#")
+							| купи.
+					p.item__footer-descr
+						| Филе из цыплят с трюфелями в бульоне.
+					p.item__footer-disabled

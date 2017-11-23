@@ -1,6 +1,6 @@
 .idea/
 .vscode/
-build/
+
 node_modules/
 zip/
 aero-debug.log
