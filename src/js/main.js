@@ -6,7 +6,7 @@
 svg4everybody();
 
 let $html = $(document.documentElement);
-let $body = $(document.body);
+// let $body = $(document.body);
 
 // Загрузка страницы
 

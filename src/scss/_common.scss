@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   overflow-x: hidden;
   overflow-y: hidden;
   min-height: 100%;
@@ -24,4 +24,5 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1120px;
+  background-color: transparent;
 }
