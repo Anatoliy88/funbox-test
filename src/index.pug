@@ -17,6 +17,8 @@ block content
 			.catalog__item.item
 				.item__wrapper
 					header.item__header
+						.item__description.item__description--hover
+							| Котэ не одобряет?
 						.item__description
 							| Сказочное заморское яство
 						.item__title
@@ -39,13 +41,18 @@ block content
 							span
 								| кг
 				footer.item__footer
-					p
+					p.item__footer-link
 						| Чего сидишь? Порадуй котэ, 
 						a(href="#")
 							| купи.
+					p.item__footer-descr
+						| Печень утки разварная с артишоками.
+					p.item__footer-disabled
 			.catalog__item.item
 				.item__wrapper
 					header.item__header
+						.item__description.item__description--hover
+							| Котэ не одобряет?
 						.item__description
 							| Сказочное заморское яство
 						.item__title
@@ -70,13 +77,18 @@ block content
 							span
 								| кг
 				footer.item__footer
-					p
+					p.item__footer-link
 						| Чего сидишь? Порадуй котэ, 
 						a(href="#")
 							| купи.
-			.catalog__item.item
+					p.item__footer-descr
+						| Головы щучьи с чесноком да свежайшая сёмгушка.
+					p.item__footer-disabled
+			.catalog__item.item.disabled
 				.item__wrapper
 					header.item__header
+						.item__description.item__description--hover
+							| Котэ не одобряет?
 						.item__description
 							| Сказочное заморское яство
 						.item__title
@@ -102,38 +114,10 @@ block content
 							span
 								| кг
 				footer.item__footer
-					p
+					p.item__footer-link
 						| Чего сидишь? Порадуй котэ, 
 						a(href="#")
 							| купи.
-			//- .catalog__item.item
-			//- 	.item__wrapper
-			//- 		header.item__header
-			//- 			.item__description
-			//- 				| Сказочное заморское яство
-			//- 			.item__title
-			//- 				span.item__name
-			//- 					| Нямушка
-			//- 				span.item__taste
-			//- 					| с курой
-			//- 			.item__params
-			//- 				span
-			//- 					b
-			//- 						| 100 
-			//- 					| порций
-			//- 				span
-			//- 					b
-			//- 						| 5 
-			//- 					| мышей в подарок
-			//- 					| заказчик доволен
-			//- 		.item__image.item__image--cat
-			//- 		.item__packaging
-			//- 			span.item__number
-			//- 				| 5
-			//- 			span
-			//- 				| кг
-			//- 	footer.item__footer
-			//- 		p
-			//- 			| Чего сидишь? Порадуй котэ,
-			//- 			a(href="#")
-			//- 				| купи.
+					p.item__footer-descr
+						| Филе из цыплят с трюфелями в бульоне.
+					p.item__footer-disabled

@@ -22,6 +22,158 @@
   &__item {
     width: 100%;
     max-width: 320px;
+
+    &:hover {
+      .item__wrapper {
+        border-color: $color-picton-blue;
+        transition: border-color 0.4s;
+
+        &::before,
+        &::after {
+          border-color: $color-picton-blue;
+          transition: border-color 0.4s;
+        }
+      }
+
+      .item__packaging {
+        background-color: $color-picton-blue;
+        transition: background-color 0.4s;
+      }
+
+      .item__footer a {
+        border-color: $color-picton-blue;
+        color: $color-picton-blue;
+        transition: color 0.4s, border-color 0.4s;
+      }
+    }
+
+    &.active {
+      .item__wrapper {
+        border-color: $color-razzmatazz;
+        transition: border-color 0.4s;
+
+        &::before,
+        &::after {
+          border-color: $color-razzmatazz;
+          transition: border-color 0.4s;
+        }
+      }
+
+      .item__packaging {
+        background-color: $color-razzmatazz;
+        transition: background-color 0.4s;
+      }
+
+      .item__footer {
+        a {
+          border-color: $color-razzmatazz;
+          color: $color-razzmatazz;
+          transition: color 0.4s border-color 0.4s;
+        }
+
+        &-link {
+          font-size: 0;
+          opacity: 0;
+          transition: opacity 0.4s;
+        }
+
+        &-descr {
+          font-size: 13px;
+          opacity: 1;
+          transition: opacity 0.4s;
+        }
+      }
+    }
+
+    &.disabled {
+      .item__wrapper {
+        border-color: $color-nobel;
+        cursor: not-allowed;
+        transition: border-color 0.4s;
+
+        &::before,
+        &::after {
+          border-color: $color-nobel;
+          transition: border-color 0.4s;
+        }
+      }
+
+      .item__header {
+        opacity: 0.5;
+      }
+
+      .item__packaging {
+        background-color: $color-nobel;
+        transition: background-color 0.4s;
+      }
+
+      .item__image {
+        opacity: 0.5;
+      }
+
+      .item__footer {
+        a {
+          border-color: $color-nobel;
+          color: $color-nobel;
+          transition: color 0.4s border-color 0.4s;
+        }
+
+        &-link {
+          font-size: 0;
+          opacity: 0;
+          transition: opacity 0.4s;
+        }
+
+        &-descr {
+          font-size: 0;
+          opacity: 0;
+          transition: opacity 0.4s;
+        }
+
+        &-disabled {
+          font-size: 13px;
+          color: $color-laser-lemon;
+          opacity: 1;
+          transition: opacity 0.4s;
+        }
+      }
+    }
+
+    &.hover {
+      .item__wrapper {
+        border-color: $color-cerise-red;
+        transition: border-color 0.4s;
+
+        &::before,
+        &::after {
+          border-color: $color-cerise-red;
+          transition: border-color 0.4s;
+        }
+      }
+
+      .item__packaging {
+        background-color: $color-cerise-red;
+        transition: background-color 0.4s;
+      }
+
+      .item__footer a {
+        border-color: $color-cerise-red;
+        color: $color-cerise-red;
+        transition: color 0.4s, border-color 0.4s;
+      }
+
+      .item__description {
+        font-size: 0;
+        opacity: 0;
+        transition: opacity 0.4s;
+
+        &--hover {
+          font-size: 16px;
+          opacity: 1;
+          transition: opacity 0.4s;
+        }
+      }
+    }
   }
 
   .item {
@@ -39,6 +191,8 @@
       padding-left: 43px;
       min-height: 433px;
       background: $color-concrete;
+      cursor: pointer;
+      transition: border-color 0.4s;
 
       &::before {
         content: "";
@@ -52,6 +206,7 @@
         height: 47px;
         background: $color-concrete;
         transform: skewX(-45deg);
+        transition: border-color 0.4s;
       }
 
       &::after {
@@ -67,6 +222,7 @@
         height: 47px;
         max-width: 270px;
         background: $color-concrete;
+        transition: border-color 0.4s;
       }
     }
 
@@ -75,7 +231,17 @@
     }
 
     &__description {
+      font-size: 16px;
       color: $color-dove-gray;
+      opacity: 1;
+      transition: opacity 0.4s;
+
+      &--hover {
+        font-size: 0;
+        color: $color-cerise-red;
+        opacity: 0;
+        transition: opacity 0.4s;
+      }
     }
 
     &__title {
@@ -121,6 +287,7 @@
       width: 81px;
       height: 81px;
       background-color: $color-curious-blue;
+      transition: background-color 0.4s;
     }
 
     &__number {
@@ -157,8 +324,8 @@
 
     &__footer {
       p {
-        font-size: 13px;
         text-align: center;
+        text-shadow: 0 1px 0 #000;
         color: $color-white;
       }
 
@@ -167,6 +334,25 @@
         font-weight: 700;
         text-decoration: none;
         color: $color-curious-blue;
+        transition: color 0.4s border-color 0.4s;
+      }
+
+      &-link {
+        font-size: 13px;
+        opacity: 1;
+        transition: opacity 0.4s;
+      }
+
+      &-descr {
+        font-size: 0;
+        opacity: 0;
+        transition: opacity 0.4s;
+      }
+
+      &-disabled {
+        font-size: 0;
+        opacity: 0;
+        transition: opacity 0.4s;
       }
     }
   }
